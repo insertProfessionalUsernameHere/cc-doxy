@@ -21,13 +21,13 @@
     (yas/expand-snippet
      (format
       "/**
-* @brief ${1:%s}%s%s
+* @brief ${1:%s - }%s%s
 **/
 "
       name
       (mapconcat
        (lambda (x)
-         (format "\n* @param %s ${%d:Description of %s}"
+         (format "\n* @param %s ${%d:- Description of %s}"
                  (car x) (incf idx) (car x)))
        args
        "\n")
