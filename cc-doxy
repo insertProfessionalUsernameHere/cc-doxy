@@ -21,7 +21,7 @@
     (yas/expand-snippet
      (format
       "/**
-* @brief ${1:%s - }%s%s
+* @brief %s - $1%s%s
 **/
 "
       name
