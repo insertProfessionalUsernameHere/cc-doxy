@@ -27,7 +27,7 @@
       name
       (mapconcat
        (lambda (x)
-         (format "\n* @param %s ${%d:- Description of %s}"
+         (format "\n* @param %s - ${%d:Description of %s}"
                  (car x) (incf idx) (car x)))
        args
        "\n")
